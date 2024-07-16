@@ -1,0 +1,8 @@
+my_string = input()
+len_str = len(my_string)
+print('Вы ввели', my_string, ', с количеством символов:', len_str)
+print('Я, пожалуй, это ПРООРУ', my_string.upper())
+print('Хотя могу сказать и тихо', my_string.lower())
+print('Без пробелов', my_string.replace(" ", ""))
+print('Первый символ', my_string[0])
+print('Последний', my_string[len_str-1])
