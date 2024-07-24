@@ -6,8 +6,6 @@ for i in range(1, len(numbers)):
     for j in range(2, numbers[i]):
         if numbers[i] % j == 0:
             counter = counter + 1
-        else:
-            break  # оно вроде и работает всё равно, но вот сокращает ли итерации вопрос
     if counter > 0:
         not_primes.append(numbers[i])
     else:
