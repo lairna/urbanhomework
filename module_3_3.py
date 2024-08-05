@@ -1,14 +1,15 @@
-print('Задача "Рекурсивное умножение цифр":\n')
+def print_params(a=1, b='строка', c=True):
+    print(a, b, c)
 
+print_params()
+print_params(b=25)
+print_params(c=[1,2,3])
 
-def get_multiplied_digits(number):
-    str_number = str(number)
-    first = int(str_number[0])
-    if len(str_number) <= 1:
-        return first
-    else:
-        return first * get_multiplied_digits(int(str_number[1:]))
+values_list = [1, 'вторая строка', False]
+values_dict = {'a': 2, 'b': 'book', 'c': True}
 
+print_params(*values_list)
+print_params(**values_dict)
 
-numbers = input('Введите целое число:\n')
-print('Произведение цифр числа', str(numbers), 'равно: \n', get_multiplied_digits(numbers))
+values_list_2 = [54.32, 'Строка' ]
+print_params(*values_list_2, 42)
